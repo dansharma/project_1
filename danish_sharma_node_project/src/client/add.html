@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        .form-container {
+            background-image: url('./img/00n9DoX8FtoZ3DOUL5IGX8j-1.webp');
+            background-size: cover;
+            background-position: center;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#!">SHOP 101</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4"></ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5 bg-indigo">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 form-container">
+                    <h1 id="formHeading" class="mb-4">Add Product</h1>
+                    <div id="message" class="alert" style="display: none;"></div>
+                    <form id="productForm" novalidate>
+                        <div class="form-group mb-3">
+                            <label for="productName">Product Name</label>
+                            <input type="text" class="form-control" id="productName" placeholder="Enter product name" required>
+                            <div class="invalid-feedback">Product name is required</div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="productPrice">Price ($)</label>
+                            <input type="number" class="form-control" id="productPrice" step="0.01" placeholder="Enter price" required>
+                            <div class="invalid-feedback">Please enter a valid price</div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="productStock">Stock</label>
+                            <input type="number" class="form-control" id="productStock" placeholder="Enter stock quantity" required>
+                            <div class="invalid-feedback">Please enter a valid stock number</div>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="productDescription">Description</label>
+                            <textarea class="form-control" id="productDescription" rows="3" placeholder="Product description" required></textarea>
+                            <div class="invalid-feedback">Product description is required</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    <div id="successMessage" class="alert alert-success mt-3 d-none">Product added successfully</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="mainfooter" class="py-5 bg-indigo">
+        <div class="container">
+            <p class="m-0 text-center text-white"></p>
+        </div>
+    </footer>
+
+
+    <script type="module" src="./app/main.js"></script>
+    <script type="module" src="./app/add.js"></script>
+    <script type="module" src="./app/Product.js"></script>
+</body>
+</html>
+
+

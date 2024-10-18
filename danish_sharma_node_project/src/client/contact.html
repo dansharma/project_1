@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Cover Letter</title>
+    
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link href="css/styles.css" rel="stylesheet" />
+
+</head>
+
+
+
+
+<body>
+
+   <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#!">SHOP 101</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Contact Section -->
+<section class="py-2 py-md-5 bg-indigo">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="">
+                <h2 class="mb-4 text-white text-center"><i class="fas fa-phone-alt me-2"></i>Contact</h2>
+                <p class="mb-5 text-white text-center" style="font-size: 18px;">Want to talk with us? Fill the contact form and we will get back to you.</p>
+                <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Form and Contact Details -->
+<section class="bg-light py-5">
+    <div class="container shadow-lg rounded">
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                <p id="fullnameError" class="text-danger d-none">Full name is required</p>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                <p id="emailError" class="text-danger d-none">A valid email with '@' is required</p>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                <p id="phoneError" class="text-danger d-none">Only numeric values are allowed</p>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Type your message here"></textarea>
+                <p id="messageError" class="text-danger d-none">Message cannot be empty</p>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <div id="successMessage" class="alert alert-success mt-3 d-none">
+        Thanks for Contacting us we will get back to you
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="py-5 ">
+<footer id="mainfooter" class="py-5 bg-indigo">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; 2023</p>
+    </div>
+</footer>
+</section>
+    
+    <script type="module" src="./app/main.js"></script>
+    <script type="module" src="./app/contact.js"></script>
+</body>
+</html>

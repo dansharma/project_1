@@ -1,0 +1,34 @@
+<section class="py-5 bg-indigo">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 form-container">
+                <h1 id="formHeading" class="mb-4">Add Product</h1>
+                <div id="message" class="alert" style="display: none;"></div>
+                <form id="productForm" novalidate>
+                    <div class="form-group mb-3">
+                        <label for="productName">Product Name</label>
+                        <input type="text" class="form-control" id="productName" placeholder="Enter product name" required>
+                        <div class="invalid-feedback">Product name is required</div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="productPrice">Price ($)</label>
+                        <input type="number" class="form-control" id="productPrice" step="0.01" placeholder="Enter price" required>
+                        <div class="invalid-feedback">Please enter a valid price</div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="productStock">Stock</label>
+                        <input type="number" class="form-control" id="productStock" placeholder="Enter stock quantity" required>
+                        <div class="invalid-feedback">Please enter a valid stock number</div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="productDescription">Description</label>
+                        <textarea class="form-control" id="productDescription" rows="3" placeholder="Product description" required></textarea>
+                        <div class="invalid-feedback">Product description is required</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <div id="successMessage" class="alert alert-success mt-3 d-none">Product added successfully</div>
+            </div>
+        </div>
+    </div>
+</section>
