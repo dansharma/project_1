@@ -1,0 +1,110 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="assets\Ace-C.png" />
+    <None Remove="assets\Ace-D.png" />
+    <None Remove="assets\Ace-H.png" />
+    <None Remove="assets\Ace-S.png" />
+    <None Remove="assets\Back.png" />
+    <None Remove="assets\Eight-C.png" />
+    <None Remove="assets\Eight-D.png" />
+    <None Remove="assets\Eight-H.png" />
+    <None Remove="assets\Eight-S.png" />
+    <None Remove="assets\Jack-C.png" />
+    <None Remove="assets\Jack-D.png" />
+    <None Remove="assets\Jack-H.png" />
+    <None Remove="assets\Jack-S.png" />
+    <None Remove="assets\Joker.png" />
+    <None Remove="assets\King-C.png" />
+    <None Remove="assets\King-D.png" />
+    <None Remove="assets\King-H.png" />
+    <None Remove="assets\King-S.png" />
+    <None Remove="assets\Nine-C.png" />
+    <None Remove="assets\Nine-D.png" />
+    <None Remove="assets\Nine-H.png" />
+    <None Remove="assets\Nine-S.png" />
+    <None Remove="assets\poker-background.jpg" />
+    <None Remove="assets\Queen-C.png" />
+    <None Remove="assets\Queen-D.png" />
+    <None Remove="assets\Queen-H.png" />
+    <None Remove="assets\Queen-S.png" />
+    <None Remove="assets\Seven-C.png" />
+    <None Remove="assets\Seven-D.png" />
+    <None Remove="assets\Seven-H.png" />
+    <None Remove="assets\Seven-S.png" />
+    <None Remove="assets\Six-C.png" />
+    <None Remove="assets\Six-D.png" />
+    <None Remove="assets\Six-H.png" />
+    <None Remove="assets\Six-S.png" />
+    <None Remove="assets\Ten-C.png" />
+    <None Remove="assets\Ten-D.png" />
+    <None Remove="assets\Ten-H.png" />
+    <None Remove="assets\Ten-S.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="assets\Ace-C.png" />
+    <EmbeddedResource Include="assets\Ace-D.png" />
+    <EmbeddedResource Include="assets\Ace-H.png" />
+    <EmbeddedResource Include="assets\Ace-S.png" />
+    <EmbeddedResource Include="assets\Back.png" />
+    <EmbeddedResource Include="assets\Eight-C.png" />
+    <EmbeddedResource Include="assets\Eight-D.png" />
+    <EmbeddedResource Include="assets\Eight-H.png" />
+    <EmbeddedResource Include="assets\Eight-S.png" />
+    <EmbeddedResource Include="assets\Jack-C.png" />
+    <EmbeddedResource Include="assets\Jack-D.png" />
+    <EmbeddedResource Include="assets\Jack-H.png" />
+    <EmbeddedResource Include="assets\Jack-S.png" />
+    <EmbeddedResource Include="assets\Joker.png" />
+    <EmbeddedResource Include="assets\King-C.png" />
+    <EmbeddedResource Include="assets\King-D.png" />
+    <EmbeddedResource Include="assets\King-H.png" />
+    <EmbeddedResource Include="assets\King-S.png" />
+    <EmbeddedResource Include="assets\Nine-C.png" />
+    <EmbeddedResource Include="assets\Nine-D.png" />
+    <EmbeddedResource Include="assets\Nine-H.png" />
+    <EmbeddedResource Include="assets\Nine-S.png" />
+    <EmbeddedResource Include="assets\poker-background.jpg" />
+    <EmbeddedResource Include="assets\Queen-C.png" />
+    <EmbeddedResource Include="assets\Queen-D.png" />
+    <EmbeddedResource Include="assets\Queen-H.png" />
+    <EmbeddedResource Include="assets\Queen-S.png" />
+    <EmbeddedResource Include="assets\Seven-C.png" />
+    <EmbeddedResource Include="assets\Seven-D.png" />
+    <EmbeddedResource Include="assets\Seven-H.png" />
+    <EmbeddedResource Include="assets\Seven-S.png" />
+    <EmbeddedResource Include="assets\Six-C.png" />
+    <EmbeddedResource Include="assets\Six-D.png" />
+    <EmbeddedResource Include="assets\Six-H.png" />
+    <EmbeddedResource Include="assets\Six-S.png" />
+    <EmbeddedResource Include="assets\Ten-C.png" />
+    <EmbeddedResource Include="assets\Ten-D.png" />
+    <EmbeddedResource Include="assets\Ten-H.png" />
+    <EmbeddedResource Include="assets\Ten-S.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
